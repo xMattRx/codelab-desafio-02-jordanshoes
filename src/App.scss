@@ -1,0 +1,322 @@
+.store {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    &__announcement {
+        background-color: var(--dark-20);
+        width: 100%;
+    }
+
+    &__announcement-text {
+        color: var(--dark-10);
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 26.11px;
+        padding: 19px 0;
+        text-align: center;
+
+        @media screen and (max-width: 1024px) {
+            padding: 12px 0;
+            font-size: 16px;
+        }
+
+        @media screen and (max-width: 768px) {
+            font-size: 14px;
+        }
+    }
+
+    &__banner {
+        background: url("/src/assets/image-michael-jordan.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        padding-top: 100px;
+        padding-bottom: 95px;
+        width: 100%;
+
+        @media screen and (min-width: 768px) and (max-width: 1024px) {
+            background-position-x: center;
+
+
+        }
+
+        @media screen and (max-width: 768px) {
+            background-position-x: center;
+
+        }
+    }
+
+    &__content {
+        max-width: 1216px;
+        display: flex;
+        justify-content: flex-start;
+        padding: 0 32px;
+        width: 100%;
+    }
+
+
+    &__intro {
+        display: flex;
+        flex-direction: column;
+        max-width: 530px;
+        width: 100%;
+    }
+
+    &__brand {
+        display: flex;
+        align-items: center;
+        cursor: default;
+        gap: 8px;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 26.11px;
+        margin-bottom: 40px;
+        text-align: left;
+    }
+
+    &__brand-name {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 26.11px;
+        text-align: left;
+
+        @media screen and (max-width: 1024px) {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 19.58px;
+            text-align: left;
+
+        }
+
+        @media screen and (max-width: 768px) {}
+    }
+
+    &__headline {
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 34.82px;
+        margin-bottom: 20px;
+        text-align: left;
+
+        @media screen and (max-width: 1024px) {
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 26.11px;
+            text-align: left;
+        }
+
+        @media screen and (max-width: 768px) {}
+    }
+
+    &__description {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 33.6px;
+        text-align: left;
+
+        @media screen and (min-width: 768px) and (max-width: 1024px) {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 25.2px;
+            text-align: left;
+
+        }
+
+        @media screen and (max-width: 768px) {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22.4px;
+            text-align: left;
+
+        }
+    }
+
+
+
+
+
+    &__highlights {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 1216px;
+        padding: 80px 32px;
+        width: 100%;
+
+        @media screen and (max-width: 1024px) {
+            padding: 56px 32px;
+        }
+
+        &-title {
+            color: var(--dark-10);
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 34.82px;
+            margin-bottom: 24px;
+            text-align: center;
+
+            @media screen and (min-width: 768px) and (max-width: 1024px) {
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 26.11px;
+                margin-bottom: 12px;
+                text-align: center;
+            }
+
+            @media screen and (max-width: 768px) {
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 21.76px;
+                margin-bottom: 12px;
+                text-align: center;
+            }
+        }
+
+        &-description {
+            color: var(--dark-10);
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 33.6px;
+            max-width: 593px;
+            margin-bottom: 72px;
+            text-align: center;
+
+            @media screen and (min-width: 768px) and (max-width: 1024px) {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 22.4px;
+                margin-bottom: 40px;
+                text-align: center;
+            }
+
+            @media screen and (max-width: 768px) {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 19.6px;
+                margin-bottom: 40px;
+                text-align: center;
+            }
+        }
+    }
+
+    &__products {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 32px;
+        width: 100%;
+        margin: 0 auto;
+
+        @media screen and (min-width: 768px) and (max-width: 1024px) {
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: center;
+
+        }
+
+        @media screen and (max-width: 768px) {
+            grid-template-columns: repeat(1, 1fr);
+            justify-items: center;
+        }
+
+    }
+
+    &__product {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 384px;
+        width: 100%;
+
+        @media screen and (max-width: 1024px) {
+            align-items: flex-start;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 20.8px;
+            text-align: left;
+
+        }
+
+        &-name {
+            color: var(--dark-10);
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 23.4px;
+            margin-bottom: 12px;
+            text-align: left;
+
+            @media screen and (min-width: 768px) and (max-width: 1024px) {
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 23.4px;
+                text-align: left;
+            }
+
+            @media screen and (max-width: 768px) {
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 20.8px;
+                text-align: left;
+
+            }
+
+        }
+
+        &-category {
+            color: var(--brand-color);
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 17.41px;
+            margin-bottom: 24px;
+            text-align: left;
+
+            @media screen and (max-width: 1024px) {
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 17.41px;
+                text-align: left;
+
+            }
+
+        }
+
+        &-price {
+            color: var(--dark-10);
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 25.52px;
+            text-align: left;
+            font-family: var(--space);
+
+            @media screen and (max-width: 1024px) {
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 25.52px;
+                text-align: left;
+
+            }
+        }
+
+        &-imageContainer {
+            background: var(--dark-20);
+            display: flex;
+            justify-content: center;
+            margin-bottom: 24px;
+            padding: 32.5px 79.5px;
+            width: 100%;
+
+            @media screen and (min-width: 768px) and (max-width: 1024px) {
+                padding: 32.5px 55.5px;
+            }
+
+            @media screen and (max-width: 768px) {
+                padding: 32.5px 47px;
+
+            }
+        }
+    }
+}
